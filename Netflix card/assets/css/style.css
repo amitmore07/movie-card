@@ -1,0 +1,96 @@
+
+.body{
+    background-color: hsl(0, 13%, 6%);
+}
+
+.dog {
+    background-color: black;
+    border:2px 0 whitesmoke;
+
+}
+
+.logo{
+    display:inline-block;
+}
+.logo img{
+    height: 120px;
+    width:140px;
+}
+
+a:link,a:visited{
+    text-decoration: none;
+}
+
+nav.navbar {
+    display: inline-block;
+}
+.navbar ul{
+    list-style:none;
+   
+}
+
+.navbar ul li{
+    display:inline-block;
+    color:#000000;
+}
+
+a:link,a:visited,
+.navbar ul li{
+    text-decoration: none;
+    color:white;
+    height:40px;
+    padding:10px 15px;
+}
+
+.row{
+    position:relative;
+}
+.moviecard{
+    /* position:relative; */
+    height:168px;
+    margin:0;
+    overflow: hidden;
+}
+
+.moviecard img{
+    height:100%;
+    object-fit: cover;
+
+}
+
+.movietitle{
+    position:absolute;
+    bottom:0;
+    width:100%;
+
+}
+
+.movieoverview{
+    position:absolute;
+    top:30%;
+    width: 100%;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:15px;
+    background-color: aliceblue;
+    color:#000000;
+    overflow-y:auto;
+    transform:scale(0);
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+.moviecard:hover .movieoverview{
+    transform: scale(130%);
+    opacity:2;
+    position:absolute;
+
+}
+
+.moviecard img:hover{
+    transform:scale(130%);
+    position:absolute;
+    transition: all .4s ease-in-out;
+    
+}
